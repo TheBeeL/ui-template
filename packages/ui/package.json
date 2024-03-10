@@ -4,9 +4,11 @@
   "version": "1.0.0",
   "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./styles.css": "./src/styles.css"
   },
   "scripts": {
+    "add:ui": "pnpm dlx shadcn-ui@latest add",
     "barrel": "barrelsby -D -d ./src",
     "dev": "chokidar \"src/**/*.tsx\" -c 'pnpm barrel'"
   },
@@ -21,6 +23,12 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "class-variance-authority": "^0.7.0"
+    "@radix-ui/react-dialog": "^1.0.5",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "cmdk": "^1.0.0",
+    "lucide-react": "^0.354.0",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7"
   }
 }

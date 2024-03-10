@@ -1,16 +1,25 @@
-import { Button, Header, Input, TextInput } from "@acme/ui";
+import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
+  Badge,
+  CommandMenu,
+} from "@acme/ui";
+import { Terminal } from "lucide-react";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Header text="World" />
-      <Button variant="primary">Click me</Button>
+      <Alert>
+        <Terminal className="size-4" />
+        <AlertTitle>Heads up!</AlertTitle>
+        <AlertDescription>
+          You can add components and dependencies to your app using the cli.
+        </AlertDescription>
+      </Alert>
 
-      <Input type="number" />
-      <TextInput />
-      <div className="bg-cyan-400 p-4">
-        <p>Testing</p>
-      </div>
+      <CommandMenu />
+      <Badge>hello</Badge>
     </main>
   );
 }
