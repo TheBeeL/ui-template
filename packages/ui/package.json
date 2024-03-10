@@ -14,6 +14,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@acme/tsconfig": "workspace:*",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "barrelsby": "^2.8.1",
