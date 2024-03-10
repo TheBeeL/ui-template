@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Header text="World" />
-      <Button />
+      <Button variant="primary">Click me</Button>
 
       <Input type="number" />
       <TextInput />
