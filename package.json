@@ -1,19 +1,20 @@
 {
-  "name": "turborepo-empty-starter",
+  "name": "turbo-template",
   "version": "1.0.0",
   "private": true,
-  "description": "An empty Turborepo starter",
   "main": "index.js",
   "scripts": {
     "build": "turbo build",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo clean",
     "lint": "turbo lint",
     "dev": "turbo dev"
   },
-  "keywords": [],
-  "author": "tknickman",
   "license": "ISC",
   "packageManager": "pnpm@7.30.5",
   "devDependencies": {
-    "typescript": "^5"
-  }
+    "@acme/prettier-config": "workspace:*",
+    "typescript": "^5.3.0"
+  },
+  "prettier": "@acme/prettier-config"
 }
