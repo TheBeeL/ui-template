@@ -1,0 +1,17 @@
+{
+  "name": "@acme/ui",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {},
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "react": "^18",
+    "typescript": "^5"
+  }
+}
