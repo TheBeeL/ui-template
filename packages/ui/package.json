@@ -1,0 +1,34 @@
+{
+  "name": "@acme/ui",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./styles.css": "./src/styles.css"
+  },
+  "scripts": {
+    "add:ui": "pnpm dlx shadcn-ui@latest add",
+    "barrel": "barrelsby -D -d ./src",
+    "dev": "chokidar \"src/**/*.tsx\" -c 'pnpm barrel'"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "barrelsby": "^2.8.1",
+    "chokidar-cli": "^3.0.0",
+    "react": "^18",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.5",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "cmdk": "^1.0.0",
+    "lucide-react": "^0.354.0",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
