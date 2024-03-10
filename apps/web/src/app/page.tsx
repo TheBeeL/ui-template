@@ -1,3 +1,5 @@
+import { Terminal } from "lucide-react";
+
 import {
   Alert,
   AlertDescription,
@@ -5,7 +7,6 @@ import {
   Badge,
   CommandMenu,
 } from "@acme/ui";
-import { Terminal } from "lucide-react";
 
 export default function Home() {
   return (
