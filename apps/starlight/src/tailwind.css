@@ -1,0 +1,6 @@
+@tailwind base;
+:root {
+  --radius: 0.5rem;
+}
+@tailwind components;
+@tailwind utilities;

@@ -5,7 +5,8 @@
   "type": "module",
   "exports": {
     ".": "./src/index.ts",
-    "./styles.css": "./src/styles.css"
+    "./styles.css": "./src/styles.css",
+    "./tailwindConfig": "./tailwind.config.js"
   },
   "scripts": {
     "add:ui": "pnpm dlx shadcn-ui@latest add",
@@ -29,7 +30,6 @@
   "devDependencies": {
     "@acme/eslint-config": "workspace:*",
     "@acme/prettier-config": "workspace:*",
-    "@acme/tailwind-config": "workspace:*",
     "@acme/tsconfig": "workspace:*",
     "@types/react": "^18",
     "@types/react-dom": "^18",

@@ -72,9 +72,6 @@ importers:
       '@acme/prettier-config':
         specifier: workspace:*
         version: link:../../tooling/prettier
-      '@acme/tailwind-config':
-        specifier: workspace:*
-        version: link:../../tooling/tailwind
       '@acme/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/typescript
@@ -112,9 +109,6 @@ importers:
       '@acme/prettier-config':
         specifier: workspace:*
         version: link:../../tooling/prettier
-      '@acme/tailwind-config':
-        specifier: workspace:*
-        version: link:../../tooling/tailwind
       '@acme/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/typescript
@@ -160,6 +154,9 @@ importers:
       '@astrojs/starlight':
         specifier: ^0.21.1
         version: 0.21.1(astro@4.4.15)
+      '@astrojs/starlight-tailwind':
+        specifier: ^2.0.1
+        version: 2.0.1(@astrojs/starlight@0.21.1)(@astrojs/tailwind@5.1.0)(tailwindcss@3.4.1)
       '@astrojs/tailwind':
         specifier: ^5.1.0
         version: 5.1.0(astro@4.4.15)(tailwindcss@3.4.1)
@@ -200,9 +197,6 @@ importers:
       '@acme/prettier-config':
         specifier: workspace:*
         version: link:../../tooling/prettier
-      '@acme/tailwind-config':
-        specifier: workspace:*
-        version: link:../../tooling/tailwind
       '@acme/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/typescript
@@ -231,9 +225,6 @@ importers:
       '@acme/prettier-config':
         specifier: workspace:*
         version: link:../../tooling/prettier
-      '@acme/tailwind-config':
-        specifier: workspace:*
-        version: link:../../tooling/tailwind
       '@acme/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/typescript
@@ -295,9 +286,6 @@ importers:
       '@acme/prettier-config':
         specifier: workspace:*
         version: link:../../tooling/prettier
-      '@acme/tailwind-config':
-        specifier: workspace:*
-        version: link:../../tooling/tailwind
       '@acme/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/typescript
@@ -390,31 +378,6 @@ importers:
       '@types/node':
         specifier: ^20
         version: 20.11.25
-      typescript:
-        specifier: ^5.3.0
-        version: 5.4.2
-
-  tooling/tailwind:
-    dependencies:
-      postcss:
-        specifier: ^8.4.35
-        version: 8.4.35
-      tailwindcss:
-        specifier: ^3.4.1
-        version: 3.4.1
-      tailwindcss-animate:
-        specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@3.4.1)
-    devDependencies:
-      '@acme/eslint-config':
-        specifier: workspace:*
-        version: link:../eslint
-      '@acme/prettier-config':
-        specifier: workspace:*
-        version: link:../prettier
-      '@acme/tsconfig':
-        specifier: workspace:*
-        version: link:../typescript
       typescript:
         specifier: ^5.3.0
         version: 5.4.2
@@ -623,6 +586,18 @@ packages:
     dependencies:
       sitemap: 7.1.1
       zod: 3.22.4
+    dev: false
+
+  /@astrojs/starlight-tailwind@2.0.1(@astrojs/starlight@0.21.1)(@astrojs/tailwind@5.1.0)(tailwindcss@3.4.1):
+    resolution: {integrity: sha512-niMgFcR7NHcsBVy8UAN3F2gqhmoN5v83st5Hu4YzvUL+6SNwjQmIipXppXdN9+iVneRjPr6PLGzDfI+wnjSBWQ==}
+    peerDependencies:
+      '@astrojs/starlight': '>=0.9.0'
+      '@astrojs/tailwind': ^5.0.0
+      tailwindcss: ^3.3.3
+    dependencies:
+      '@astrojs/starlight': 0.21.1(astro@4.4.15)
+      '@astrojs/tailwind': 5.1.0(astro@4.4.15)(tailwindcss@3.4.1)
+      tailwindcss: 3.4.1
     dev: false
 
   /@astrojs/starlight@0.21.1(astro@4.4.15):

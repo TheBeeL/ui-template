@@ -24,8 +24,9 @@ export default defineConfig({
           autogenerate: { directory: "reference" },
         },
       ],
+      customCss: ["./src/tailwind.css"],
     }),
-    tailwind(),
+    tailwind({ applyBaseStyles: false }),
     react(),
   ],
 });
