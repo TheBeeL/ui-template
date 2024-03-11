@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -19,6 +20,7 @@
     "@types/canvas-confetti": "^1.6.3",
     "astro": "^4.4.15",
     "autoprefixer": "^10.4.15",
+    "eslint": "^8.56.0",
     "canvas-confetti": "^1.9.1",
     "postcss": "^8.4.28",
     "react": "^18.2.0",
@@ -33,5 +35,13 @@
     "@acme/tsconfig": "workspace:*",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21"
-  }
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@acme/eslint-config/base",
+      "@acme/eslint-config/astro"
+    ]
+  },
+  "prettier": "@acme/prettier-config"
 }

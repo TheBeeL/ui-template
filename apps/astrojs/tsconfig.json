@@ -1,18 +1,20 @@
 {
-  // "extends": "@acme/tsconfig/base.json",
-  "extends": "astro/tsconfigs/base",
+  "extends": "@acme/tsconfig/base.json",
+  // "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    // "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
     "plugins": [
       {
         "name": "@astrojs/ts-plugin"
       }
     ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@ui": ["../../packages/ui/src/"]
+      "@ui/*": ["../../packages/ui/src/*"],
+      "@ui": ["../../packages/ui/src/index.ts"],
+      "~/*": ["./src/*"]
     }
   }
 }

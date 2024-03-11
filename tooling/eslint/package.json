@@ -4,6 +4,7 @@
   "private": true,
   "license": "MIT",
   "files": [
+    "./astro.js",
     "./base.js",
     "./next.js",
     "./react.js"
@@ -19,6 +20,7 @@
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
     "eslint-config-turbo": "^1.12.5",
+    "eslint-plugin-astro": "^0.31.4",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-react": "^7.34.0",
     "eslint-plugin-react-hooks": "^4.6.0"
