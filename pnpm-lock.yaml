@@ -16,6 +16,9 @@ importers:
 
   apps/astrojs:
     dependencies:
+      "@acme/ui":
+        specifier: workspace:*
+        version: link:../../packages/ui
       "@astrojs/check":
         specifier: ^0.5.6
         version: 0.5.6(typescript@5.4.2)
@@ -28,15 +31,12 @@ importers:
       "@astrojs/tailwind":
         specifier: ^5.1.0
         version: 5.1.0(astro@4.4.15)(tailwindcss@3.4.1)
+      "@astrojs/ts-plugin":
+        specifier: ^1.5.3
+        version: 1.5.3
       "@types/canvas-confetti":
         specifier: ^1.6.3
         version: 1.6.4
-      "@types/react":
-        specifier: ^18.2.64
-        version: 18.2.64
-      "@types/react-dom":
-        specifier: ^18.2.21
-        version: 18.2.21
       astro:
         specifier: ^4.4.15
         version: 4.4.15(typescript@5.4.2)
@@ -61,6 +61,25 @@ importers:
       typescript:
         specifier: ^5.4.2
         version: 5.4.2
+    devDependencies:
+      "@acme/eslint-config":
+        specifier: workspace:*
+        version: link:../../tooling/eslint
+      "@acme/prettier-config":
+        specifier: workspace:*
+        version: link:../../tooling/prettier
+      "@acme/tailwind-config":
+        specifier: workspace:*
+        version: link:../../tooling/tailwind
+      "@acme/tsconfig":
+        specifier: workspace:*
+        version: link:../../tooling/typescript
+      "@types/react":
+        specifier: ^18.2.64
+        version: 18.2.64
+      "@types/react-dom":
+        specifier: ^18.2.21
+        version: 18.2.21
 
   apps/vite:
     dependencies:
@@ -551,6 +570,20 @@ packages:
       which-pm-runs: 1.1.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@astrojs/ts-plugin@1.5.3:
+    resolution:
+      {
+        integrity: sha512-exMHUWAa+JxJ1GaOw6TrC/znZMSwuFMaZrtGxjqfdsMnBAVR4WzJbs9560JNAJCxG7HMqpIfVcjqHdQe2oJ9LA==,
+      }
+    dependencies:
+      "@astrojs/compiler": 2.7.0
+      "@jridgewell/sourcemap-codec": 1.4.15
+      "@volar/language-core": 2.0.4
+      "@volar/typescript": 2.0.4
+      semver: 7.6.0
+      vscode-languageserver-textdocument: 1.0.11
     dev: false
 
   /@babel/code-frame@7.23.5:
