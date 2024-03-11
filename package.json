@@ -11,6 +11,7 @@
     "dev": "turbo dev",
     "dev:astro": "turbo dev --filter=./apps/astrojs",
     "dev:next": "turbo dev --filter=./apps/nextjs",
+    "dev:star": "turbo dev --filter=./apps/starlight",
     "dev:vite": "turbo dev --filter=./apps/vite"
   },
   "license": "ISC",
