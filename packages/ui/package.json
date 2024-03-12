@@ -6,7 +6,7 @@
   "exports": {
     ".": "./src/index.ts",
     "./styles.css": "./src/styles.css",
-    "./tailwindConfig": "./tailwind.config.js"
+    "./tailwindConfig": "./tailwind.config.ts"
   },
   "scripts": {
     "add:ui": "pnpm dlx shadcn-ui@latest add",
