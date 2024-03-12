@@ -206,6 +206,9 @@ importers:
 
   apps/t3-app:
     dependencies:
+      '@acme/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       '@auth/drizzle-adapter':
         specifier: ^0.7.0
         version: 0.7.0
@@ -255,6 +258,15 @@ importers:
         specifier: ^3.22.4
         version: 3.22.4
     devDependencies:
+      '@acme/eslint-config':
+        specifier: workspace:*
+        version: link:../../tooling/eslint
+      '@acme/prettier-config':
+        specifier: workspace:*
+        version: link:../../tooling/prettier
+      '@acme/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/typescript
       '@types/better-sqlite3':
         specifier: ^7.6.9
         version: 7.6.9
@@ -288,6 +300,9 @@ importers:
       postcss:
         specifier: ^8.4.34
         version: 8.4.35
+      postcss-import:
+        specifier: ^16.0.1
+        version: 16.0.1(postcss@8.4.35)
       prettier:
         specifier: ^3.2.5
         version: 3.2.5

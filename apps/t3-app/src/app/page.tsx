@@ -1,3 +1,4 @@
+import { Button } from "@ui/index";
 import { unstable_noStore as noStore } from "next/cache";
 import Link from "next/link";
 
@@ -55,6 +56,7 @@ export default async function Home() {
             >
               {session ? "Sign out" : "Sign in"}
             </Link>
+            <Button>Click me</Button>
           </div>
         </div>
 
