@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "@acme/ui";
 import { AuthPage as AuthPageBase } from "@refinedev/core";
 import type { AuthPageProps } from "@refinedev/core";
 
@@ -8,6 +9,7 @@ export const AuthPage = (props: AuthPageProps) => {
       {...props}
       renderContent={(content) => (
         <div>
+          <Button>Click me</Button>
           <p
             style={{
               padding: 10,
