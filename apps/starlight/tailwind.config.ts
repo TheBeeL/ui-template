@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import starlightPlugin from "@astrojs/starlight-tailwind";
 
 import UIConfig from "@acme/ui/tailwindConfig";
 
@@ -13,4 +14,5 @@ export default {
   theme: {
     extend: {},
   },
+  plugins: [starlightPlugin()],
 } satisfies Config;
