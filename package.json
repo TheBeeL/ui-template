@@ -2,7 +2,11 @@
   "name": "turbo-template",
   "version": "1.0.0",
   "private": true,
-  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "tooling/*"
+  ],
   "scripts": {
     "build": "turbo build",
     "clean": "git clean -xdf node_modules",
@@ -15,11 +19,5 @@
     "dev:t3": "turbo dev --filter=./apps/t3-app",
     "dev:vite": "turbo dev --filter=./apps/vite"
   },
-  "license": "ISC",
-  "packageManager": "pnpm@7.30.5",
-  "devDependencies": {
-    "@acme/prettier-config": "workspace:*",
-    "typescript": "^5.3.0"
-  },
-  "prettier": "@acme/prettier-config"
+  "packageManager": "bun@1.0.33"
 }
