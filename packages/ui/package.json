@@ -11,10 +11,10 @@
     "./tailwindConfig": "./tailwind.config.ts"
   },
   "scripts": {
-    "add:ui": "pnpm dlx shadcn-ui@latest add",
+    "add:ui": "bunx shadcn-ui@latest add",
     "barrel": "barrelsby -D -d ./src",
     "clean": "rm -rf .turbo node_modules",
-    "dev": "chokidar \"src/**/*.tsx\" -c 'pnpm barrel'",
+    "dev": "chokidar \"src/**/*.tsx\" -c 'bun barrel'",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"
